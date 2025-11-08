@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | BANSA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" class="logo">BANSA</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="chapters.html">Chapters</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Join BANSA</h1>
+        <p class="muted">
+          Become part of a network that supports Bamasaaba students academically
+          and culturally.
+        </p>
+        <a
+          href="https://forms.gle/your-google-form-link"
+          target="_blank"
+          class="btn"
+          >Register via Google Form</a
+        >
+      </div>
+    </section>
+
+    <section class="join" aria-label="Join BANSA">
+      <div class="container">
+        <div class="grid">
+          <div class="card">
+            <h2>Why join?</h2>
+            <ul>
+              <li>Access mentorship and academic support.</li>
+              <li>Participate in cultural events and leadership programs.</li>
+              <li>Connect with chapters nationwide and grow your network.</li>
+            </ul>
+            <h3 style="margin-top: 12px">How it works</h3>
+            <ol>
+              <li>Click the Register button to complete the official form.</li>
+              <li>Attend your local chapter's welcome meeting.</li>
+              <li>Participate in events and leadership opportunities.</li>
+            </ol>
+          </div>
+
+          <div class="card">
+            <h2>Quick join (optional)</h2>
+            <p class="muted">
+              If you prefer, send a quick join request and we'll follow up.
+            </p>
+            <!--
+              Quick join form: if you want serverless submissions, set
+              the `data-endpoint` attribute on the form to your Formspree
+              endpoint (e.g. https://formspree.io/f/your-form-id) or any
+              HTTP endpoint that accepts JSON. If left empty, the form will
+              fall back to opening the user's email client (mailto).
+            -->
+            <form
+              id="quickJoinForm"
+              data-endpoint="https://formspree.io/f/xqawzpbq"
+            >
+              <label class="sr-only" for="q-name">Name</label>
+              <input
+                id="q-name"
+                name="name"
+                type="text"
+                placeholder="Your full name"
+                required
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border-radius: 8px;
+                  border: 1px solid #e6e9ef;
+                  margin-bottom: 8px;
+                "
+              />
+              <label class="sr-only" for="q-email">Email</label>
+              <input
+                id="q-email"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                required
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border-radius: 8px;
+                  border: 1px solid #e6e9ef;
+                  margin-bottom: 8px;
+                "
+              />
+              <label class="sr-only" for="q-institution">Institution</label>
+              <input
+                id="q-institution"
+                name="institution"
+                type="text"
+                placeholder="Institution (optional)"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  border-radius: 8px;
+                  border: 1px solid #e6e9ef;
+                  margin-bottom: 8px;
+                "
+              />
+              <div style="display: flex; gap: 8px; align-items: center">
+                <button type="submit" class="btn" id="quickJoinSubmit">
+                  <span class="btn-text">Send request</span>
+                  <span
+                    class="loader"
+                    aria-hidden="true"
+                    style="display: none; margin-left: 8px"
+                  ></span>
+                </button>
+                <a
+                  href="https://forms.gle/your-google-form-link"
+                  target="_blank"
+                  class="btn"
+                  style="
+                    background: #fff;
+                    color: var(--accent);
+                    box-shadow: none;
+                    border: 1px solid rgba(2, 6, 23, 0.04);
+                  "
+                  >Open full form</a
+                >
+              </div>
+              <p
+                id="quickJoinMsg"
+                class="muted"
+                style="margin-top: 10px; display: none"
+              ></p>
+            </form>
+            <!-- Inline success modal (hidden by default). Shown on successful submission. -->
+            <div
+              id="joinModal"
+              class="modal"
+              role="dialog"
+              aria-modal="true"
+              aria-hidden="true"
+            >
+              <div class="modal-content" role="document">
+                <button class="modal-close" aria-label="Close">×</button>
+                <div class="modal-body">
+                  <h3>Thank you!</h3>
+                  <p class="modal-message">We'll be in touch soon.</p>
+                  <div
+                    style="
+                      margin-top: 12px;
+                      display: flex;
+                      gap: 8px;
+                      justify-content: flex-end;
+                    "
+                  >
+                    <button class="btn modal-ok">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top: 8px; font-size: 0.9rem" class="muted">
+              We respect your privacy — your details will only be used to
+              contact you about BANSA membership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Bamasaaba National Students Association</p>
+        <p>Contact: <a href="mailto:info@bansa.org">info@bansa.org</a></p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

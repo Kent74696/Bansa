@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | BANSA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" class="logo">BANSA</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="chapters.html">Chapters</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Events</h1>
+        <p class="muted">
+          Join our cultural festivals, leadership conferences, and local chapter
+          activities. See what's coming and how to participate.
+        </p>
+        <a href="join.html" class="btn">Register with BANSA</a>
+      </div>
+    </section>
+
+    <section class="events" aria-label="Events list">
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+          "
+        >
+          <h2 style="margin: 0">Upcoming Events</h2>
+          <div>
+            <label class="sr-only" for="filter">Filter events</label>
+            <select
+              id="filter"
+              name="filter"
+              style="
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid #e6e9ef;
+              "
+            >
+              <option value="all">All events</option>
+              <option value="upcoming" selected>Upcoming</option>
+              <option value="past">Past</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top: 18px">
+          <article class="card" aria-labelledby="evt1">
+            <h3 id="evt1">Cultural Festival</h3>
+            <p>
+              <time datetime="2025-11-15">Nov 15, 2025</time> —
+              <strong>Mbale University</strong>
+            </p>
+            <p class="muted">
+              A celebration of Bamasaaba culture with dance, music, and local
+              cuisine. Open to all students and community members.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="join.html">Register</a>
+              <a href="#" style="color: var(--muted); text-decoration: none"
+                >More details</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="evt2">
+            <h3 id="evt2">Leadership Conference</h3>
+            <p>
+              <time datetime="2025-12-10">Dec 10, 2025</time> —
+              <strong>Kampala</strong>
+            </p>
+            <p class="muted">
+              Workshops and panels for student leaders on governance, project
+              management, and chapter development.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="join.html">Register</a>
+              <a href="#" style="color: var(--muted); text-decoration: none"
+                >More details</a
+              >
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="evt3">
+            <h3 id="evt3">Alumni Networking Night</h3>
+            <p>
+              <time datetime="2025-09-20">Sep 20, 2025</time> —
+              <strong>Mbale Town Hall</strong>
+            </p>
+            <p class="muted">
+              Past event: Alumni and current students met to share career advice
+              and mentorship opportunities.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="events.html">View recap</a>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="evt4">
+            <h3 id="evt4">Cultural Awareness Week</h3>
+            <p>
+              <time datetime="2025-11-05">Nov 5-10, 2025</time> —
+              <strong>Various campuses</strong>
+            </p>
+            <p class="muted">
+              Past event: Activities promoting Bamasaaba culture held across
+              institutions.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="events.html">View recap</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Bamasaaba National Students Association</p>
+        <p>Contact: <a href="mailto:info@bansa.org">info@bansa.org</a></p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

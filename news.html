@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | BANSA</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" class="logo">BANSA</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="chapters.html">Chapters</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>News & Announcements</h1>
+        <p class="muted">
+          Latest updates from BANSA — elections, events, and member stories.
+          Subscribe to stay informed.
+        </p>
+        <div
+          style="
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+          "
+        >
+          <a class="btn" href="#news-list">See latest</a>
+          <a
+            class="btn"
+            href="join.html"
+            style="
+              background: #fff;
+              color: var(--accent);
+              box-shadow: none;
+              border: 1px solid rgba(2, 6, 23, 0.04);
+            "
+            >Become a member</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="news-list" class="news" aria-label="News list">
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+          "
+        >
+          <h2 style="margin: 0">Recent articles</h2>
+          <div>
+            <label class="sr-only" for="news-filter">Filter news</label>
+            <select
+              id="news-filter"
+              style="
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid #e6e9ef;
+              "
+            >
+              <option value="all">All</option>
+              <option value="announcements">Announcements</option>
+              <option value="events">Events</option>
+              <option value="stories">Member stories</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top: 18px">
+          <article
+            class="card"
+            aria-labelledby="news1"
+            data-type="announcements"
+          >
+            <h3 id="news1">BANSA Leadership Elections</h3>
+            <p class="muted"><time datetime="2025-10-20">Oct 20, 2025</time></p>
+            <p>
+              New student leaders were elected nationwide. The newly formed
+              executive team will focus on chapter expansion and stronger member
+              support.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="news2" data-type="events">
+            <h3 id="news2">Cultural Awareness Week</h3>
+            <p class="muted">
+              <time datetime="2025-11-05">Nov 5-10, 2025</time>
+            </p>
+            <p>
+              Activities promoting Bamasaaba culture were held across
+              institutions, featuring performances, workshops, and campus
+              exhibitions.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="#">Read recap</a>
+            </div>
+          </article>
+
+          <article class="card" aria-labelledby="news3" data-type="stories">
+            <h3 id="news3">Member Spotlight: Clara</h3>
+            <p class="muted"><time datetime="2025-09-12">Sep 12, 2025</time></p>
+            <p>
+              Clara, a chapter leader, shares her journey in building mentorship
+              programs that uplift first-year students.
+            </p>
+            <div
+              style="
+                margin-top: 12px;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+              "
+            >
+              <a class="btn" href="#">Read story</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Bamasaaba National Students Association</p>
+        <p>Contact: <a href="mailto:info@bansa.org">info@bansa.org</a></p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
